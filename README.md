@@ -1,6 +1,7 @@
 
 # ![icon](https://user-images.githubusercontent.com/104465016/206486619-fffa1ad6-8383-41f1-9650-b8bcae8ef423.svg) PowerMessenger
  
+ Это проект 
  
 ## Technologies
 
