@@ -1,5 +1,5 @@
 
-# ![icon](https://user-images.githubusercontent.com/104465016/206486619-fffa1ad6-8383-41f1-9650-b8bcae8ef423.svg) PowerMessenger
+# ![icon](https://user-images.githubusercontent.com/104465016/206489169-53054513-5052-4f03-9f7a-f743926349a3.svg) PowerMessenger
  
  Это проект 
  
