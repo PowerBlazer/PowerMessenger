@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "IYwPMuUXdHJiYOwkH552CKWZf3Q19jrrkj3v+sZnHnA=",
+  "Source": "PowerMessenger.WebAPI",
+  "BasePath": "_content/PowerMessenger.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PowerMessenger.WebAPI\\wwwroot",
+      "Source": "PowerMessenger.WebAPI",
+      "ContentRoot": "D:\\GitHubProjects\\PowerMessenger\\src\\PowerMessenger.WebAPI\\wwwroot\\",
+      "BasePath": "_content/PowerMessenger.WebAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

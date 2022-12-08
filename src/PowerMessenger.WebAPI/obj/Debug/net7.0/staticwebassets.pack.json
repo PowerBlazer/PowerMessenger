@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\GitHubProjects\\PowerMessenger\\PowerMessenger.WebAPI\\wwwroot\\Images\\Logo.svg",
+      "PackagePath": "staticwebassets\\Images\\Logo.svg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.PowerMessenger.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.PowerMessenger.WebAPI.props",
+      "PackagePath": "build\\PowerMessenger.WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.PowerMessenger.WebAPI.props",
+      "PackagePath": "buildMultiTargeting\\PowerMessenger.WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.PowerMessenger.WebAPI.props",
+      "PackagePath": "buildTransitive\\PowerMessenger.WebAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
