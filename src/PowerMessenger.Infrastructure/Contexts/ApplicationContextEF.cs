@@ -5,6 +5,7 @@ using PowerMessenger.Infrastructure.Configurations;
 
 namespace PowerMessenger.Infrastructure.Contexts
 {
+    #pragma warning disable CS8618
     public class ApplicationContextEF : DbContext, IApplicationContextEF
     {
         public DbSet<User> Users { get; set; }
@@ -13,11 +14,15 @@ namespace PowerMessenger.Infrastructure.Contexts
         public DbSet<Message> Messages { get; set; }
         public DbSet<MessageStatus> MessageStatuses { get; set; }
         public DbSet<ChatParticipant> ChatParticipants { get; set; }
+        public DbSet<ChatOwner> ChatOwners { get; set; }
+        public DbSet<ChatParticipant> ChatParticipant { get; set; }
+        public DbSet<ChatOwner> ChatOwner { get; set; }
 
         public ApplicationContextEF(DbContextOptions<ApplicationContextEF> options) : base(options)
-        {
+        {           
             Database.EnsureCreated();
         }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.ApplyConfiguration(new UserConfiguration());

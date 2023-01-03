@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PowerMessenger.WebAPI.Controllers.bases;
 using PowerMessenger.Core.DTO.Authorization;
 using PowerMessenger.Core.Services;
-using Newtonsoft.Json.Linq;
+using PowerMessenger.Core.Repository;
 
 namespace PowerMessenger.WebAPI.Controllers
 {
@@ -24,16 +23,10 @@ namespace PowerMessenger.WebAPI.Controllers
         
              if(!authorizeResult.IsSuccess)
              {
-                 return BadRequest(authorizeResult.Errors);
+                 return BadRequest(authorizeResult);
              }
-        
-             Response.Cookies.Append(".AspNetCore.Application.Id", authorizeResult.Token!, new CookieOptions
-             {
-                 MaxAge = TimeSpan.FromMinutes(60),
-             });
-        
+             
              return Ok(authorizeResult);
-        
         }
         
         [HttpPost]
@@ -44,15 +37,27 @@ namespace PowerMessenger.WebAPI.Controllers
         
              if (!authorizeResult.IsSuccess)
              {
-                 return BadRequest(authorizeResult.Errors);
+                 return BadRequest(authorizeResult);
              }
-        
-             Response.Cookies.Append(".AspNetCore.Application.Id", authorizeResult.Token!, new CookieOptions
-             {
-                 MaxAge = TimeSpan.FromMinutes(60),
-             });
-        
+                 
              return Ok(authorizeResult);
-        } 
+        }
+        [HttpGet("Test")]
+        public async Task<IActionResult> Test([FromServices]IUserRepository userRepository)
+        {
+            return Ok(await userRepository.GetAllUsersAsync());
+        }
+
+        [HttpPost]
+        [Route("Logout")]
+        public IActionResult Logout()
+        {
+            _authorizationService.Logout();
+
+            return Ok();
+        }
+
+
+        
     }
 }

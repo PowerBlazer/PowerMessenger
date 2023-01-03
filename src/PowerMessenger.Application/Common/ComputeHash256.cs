@@ -23,6 +23,7 @@ namespace PowerMessenger.Application.Common
                 {
                     builder.Append(bytes[i].ToString("x2"));
                 }
+
                 return builder.ToString();
             }
         }

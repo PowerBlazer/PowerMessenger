@@ -22,15 +22,14 @@ builder.Services.AddServicesInfrastructure(builder.Configuration);
 
 builder.Services.AddServicesApplication(builder.Configuration);
 
-
 //Configure Cors
-builder.Services.AddCors(p => p.AddPolicy("",builder =>{
+builder.Services.AddCors(p => p.AddPolicy("reactapp",builder =>{
+    builder.WithOrigins("https://localhost:3000");
     builder.AllowAnyHeader();
     builder.AllowAnyMethod();
     builder.AllowCredentials();
     builder.SetIsOriginAllowed((host) => true);
-}
-));
+}));
 
 //Configuration JWT Authentication
 
@@ -65,10 +64,7 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.Configure<JWTOptions>(configureAuthOptions);
 
-
-
 //Build
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -79,6 +75,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+//Add token in cookies 
 app.Use(async (context, next) =>
 {
     var token = context.Request.Cookies[".AspNetCore.Application.Id"];
@@ -90,12 +87,15 @@ app.Use(async (context, next) =>
 
     await next();
 });
+//PolicyCokkie
 app.UseCookiePolicy(new CookiePolicyOptions
 {
     MinimumSameSitePolicy = SameSiteMode.None,
     HttpOnly = HttpOnlyPolicy.Always,
     Secure = CookieSecurePolicy.Always,
 });
+
+app.UseCors("reactapp");
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseHttpsRedirection();

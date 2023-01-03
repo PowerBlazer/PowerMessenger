@@ -12,6 +12,8 @@ namespace PowerMessenger.Core.Contexts
         DbSet<Contact> Contacts { get; set; }
         DbSet<Message> Messages { get; set; }
         DbSet<MessageStatus> MessageStatuses { get; set; }
+        DbSet<ChatParticipant> ChatParticipant { get; set; }
+        DbSet<ChatOwner> ChatOwner { get; set; }
         Task<int> SaveChangesAsync();
     }
 }

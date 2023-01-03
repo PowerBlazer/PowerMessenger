@@ -1,5 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
+using MySql.Data.MySqlClient;
 using PowerMessenger.Core.Contexts;
 using System.Data;
 
@@ -17,7 +18,7 @@ namespace PowerMessenger.Infrastructure.Contexts
 
         public IDbConnection CreateConnection()
         {
-            return new SqlConnection(_configuration.GetConnectionString("DefaultConnection"));
+            return new MySqlConnection(_configuration.GetConnectionString("MySqlConnection"));
         }
     }
 }

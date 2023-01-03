@@ -1,0 +1,9 @@
+.chatsPanel{
+    min-width: 420px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #212121;
+    overflow-y: auto;
+    border-right: 1px solid #0F0F0F;
+}

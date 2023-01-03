@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IYwPMuUXdHJiYOwkH552CKWZf3Q19jrrkj3v+sZnHnA=",
+  "Hash": "KXWhWseSvL5n6EGyOBJAnC0javLoUwSiioWh82AqIiA=",
   "Source": "PowerMessenger.WebAPI",
   "BasePath": "_content/PowerMessenger.WebAPI",
   "Mode": "Default",
@@ -15,5 +15,57 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "D:\\GitHubProjects\\PowerMessenger\\src\\PowerMessenger.WebAPI\\wwwroot\\ChatsImage\\5009efc6-6891-44b6-8d20-68ec9a9199de.jpg",
+      "SourceId": "PowerMessenger.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHubProjects\\PowerMessenger\\src\\PowerMessenger.WebAPI\\wwwroot\\",
+      "BasePath": "_content/PowerMessenger.WebAPI",
+      "RelativePath": "ChatsImage/5009efc6-6891-44b6-8d20-68ec9a9199de.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ChatsImage\\5009efc6-6891-44b6-8d20-68ec9a9199de.jpg"
+    },
+    {
+      "Identity": "D:\\GitHubProjects\\PowerMessenger\\src\\PowerMessenger.WebAPI\\wwwroot\\ChatsImage\\efe4e2f6-d7b2-49f4-80bf-a2b5e8fa7178.jpg",
+      "SourceId": "PowerMessenger.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHubProjects\\PowerMessenger\\src\\PowerMessenger.WebAPI\\wwwroot\\",
+      "BasePath": "_content/PowerMessenger.WebAPI",
+      "RelativePath": "ChatsImage/efe4e2f6-d7b2-49f4-80bf-a2b5e8fa7178.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ChatsImage\\efe4e2f6-d7b2-49f4-80bf-a2b5e8fa7178.jpg"
+    },
+    {
+      "Identity": "D:\\GitHubProjects\\PowerMessenger\\src\\PowerMessenger.WebAPI\\wwwroot\\UsersAvatar\\user.jpg",
+      "SourceId": "PowerMessenger.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHubProjects\\PowerMessenger\\src\\PowerMessenger.WebAPI\\wwwroot\\",
+      "BasePath": "_content/PowerMessenger.WebAPI",
+      "RelativePath": "UsersAvatar/user.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UsersAvatar\\user.jpg"
+    }
+  ]
 }

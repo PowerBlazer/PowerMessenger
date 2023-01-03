@@ -1,8 +1,16 @@
 {
   "Files": [
     {
-      "Id": "D:\\GitHubProjects\\PowerMessenger\\PowerMessenger.WebAPI\\wwwroot\\Images\\Logo.svg",
-      "PackagePath": "staticwebassets\\Images\\Logo.svg"
+      "Id": "D:\\GitHubProjects\\PowerMessenger\\src\\PowerMessenger.WebAPI\\wwwroot\\ChatsImage\\5009efc6-6891-44b6-8d20-68ec9a9199de.jpg",
+      "PackagePath": "staticwebassets\\ChatsImage\\5009efc6-6891-44b6-8d20-68ec9a9199de.jpg"
+    },
+    {
+      "Id": "D:\\GitHubProjects\\PowerMessenger\\src\\PowerMessenger.WebAPI\\wwwroot\\ChatsImage\\efe4e2f6-d7b2-49f4-80bf-a2b5e8fa7178.jpg",
+      "PackagePath": "staticwebassets\\ChatsImage\\efe4e2f6-d7b2-49f4-80bf-a2b5e8fa7178.jpg"
+    },
+    {
+      "Id": "D:\\GitHubProjects\\PowerMessenger\\src\\PowerMessenger.WebAPI\\wwwroot\\UsersAvatar\\user.jpg",
+      "PackagePath": "staticwebassets\\UsersAvatar\\user.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.PowerMessenger.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",

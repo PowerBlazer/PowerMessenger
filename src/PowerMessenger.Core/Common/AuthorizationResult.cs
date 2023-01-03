@@ -6,12 +6,11 @@ namespace PowerMessenger.Core.Common
     {
         public AuthorizationResult()
         {
-            IsSuccess= true;
-            Errors = new List<string>();
+            IsSuccess = true;
         }
 
         public bool IsSuccess { get; protected set; }
-        public IList<string> Errors { get; protected set; }
+        public IList<string> Errors { get; protected set; } = new List<string>();
         public string? Token { get; set; }
 
         public void Failed(string[] errors)

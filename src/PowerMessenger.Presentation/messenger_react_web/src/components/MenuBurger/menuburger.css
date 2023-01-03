@@ -1,0 +1,33 @@
+.menuBurger{
+    position: absolute;
+    left:20px;
+    top:58px;
+    min-width: 260px;
+    height: auto;
+    background-color:rgba(33, 33, 33, 0.803);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    backdrop-filter: blur(9px);
+    box-shadow: 0px 0px 1px 1px rgba(113, 112, 112, 0.233);
+    z-index: 50;
+}
+.activeMenu{
+    opacity: 1;
+    visibility: visible;
+}
+.messengerVersion{
+    width: auto;
+    text-align: center;
+    margin: 7px 0;
+    color: #A7A7A7;
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+}
+
+
+

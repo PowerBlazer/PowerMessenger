@@ -13,4 +13,8 @@
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.24.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Hubs\" />
+  </ItemGroup>
+
 </Project>

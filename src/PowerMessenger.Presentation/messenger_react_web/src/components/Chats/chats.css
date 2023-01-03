@@ -1,0 +1,17 @@
+.chatsWindow{
+    padding: 5px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    scale: 1;
+    animation:anim-chats .3s ease-out ;
+}
+
+@keyframes anim-chats{
+    0%{
+        scale: 0.85;
+    }
+    100%{
+        scale: 1;
+    }
+}

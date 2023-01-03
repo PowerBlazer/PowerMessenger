@@ -1,0 +1,110 @@
+.chatBlock{
+    min-width: 100%;
+    height: 68px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    padding: 7px;
+    transition: background-color .2s;
+    border-radius: 5px;
+    gap: 5px;
+    color: white;
+}
+.chatsWindow>li>.active{
+    background-color:#8673DF ;
+}
+
+.chatBlock:hover{
+    background-color:rgba(255, 255, 255, 0.193);
+}
+
+.chatBlock>.avatar-chat{
+    min-width: 54px;
+    min-height: 54px;
+    max-width: 54px;
+    max-height: 54px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid rgba(233, 233, 233, 0.3);
+}
+.chatBlock>.avatar-chat img{
+    width: 100%;
+    height: 100%;
+    object-position: center center;
+    object-fit: contain;
+}
+.chatBlock>.chatContent{
+    width: 100%;
+    height: 100%;
+    padding: 4px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chatBlock>.chatContent .header{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.chatBlock>.chatContent .time{
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+    color: #9E9E9E;
+    font-size: 13px;
+}
+.chatBlock>.chatContent>.header>.active{
+    color: white;
+}
+.chatBlock>.chatContent .header-content{
+    font-family: 'Inter',sans-serif;
+    font-weight: 700;
+    text-align: start;
+    font-size: 16px;
+}
+.chatBlock>.chatContent .content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.chatBlock>.chatContent .message-content{
+    display: flex;
+    align-items:baseline;
+    gap: 2px;
+}
+.chatBlock>.chatContent>.content>.countNoReadMessages{
+    padding: 2px 7px;
+    border-radius: 10px;
+    background-color: #8673DF;
+    color: white;
+    font-family: 'Inter',sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chatBlock>.chatContent>.content>.active{
+    background-color: white;
+    color:#8673DF;
+}
+
+.chatBlock>.chatContent .message-content .owner{
+    font-family: 'Inter',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+.chatBlock>.chatContent .message-content .message{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #A0A0A0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 210px;
+}
+.chatBlock>.chatContent .message-content>.active{
+    color: white;
+}

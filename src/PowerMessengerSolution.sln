@@ -5,8 +5,6 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerMessenger.Application", "PowerMessenger.Application\PowerMessenger.Application.csproj", "{CB0B42F8-669E-4594-9268-EA462A863827}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerMessenger.Presentation", "PowerMessenger.Presentation", "{F9CEA064-2FF7-4055-81DD-19E1AAD47789}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerMessenger.WebAPI", "PowerMessenger.WebAPI\PowerMessenger.WebAPI.csproj", "{1678BB94-EBCE-42B2-A739-19D6382AE6A3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerMessenger.Infrastructure", "PowerMessenger.Infrastructure\PowerMessenger.Infrastructure.csproj", "{F1C9B913-A67E-4712-A099-6A1C1FFD5286}"

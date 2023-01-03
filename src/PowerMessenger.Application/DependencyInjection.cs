@@ -13,6 +13,8 @@ namespace PowerMessenger.Application
 
             services.AddSingleton<IJwtToken, JwtToken>();
             services.AddScoped<IAuthorizationService, AuthorizationService>();
+            services.AddScoped<IChatService, ChatService>();
+            services.AddScoped<IMessageService, MessageService>();
 
             return services;
         }

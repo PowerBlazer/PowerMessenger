@@ -8,6 +8,6 @@ namespace PowerMessenger.Core.Services
     {
         Task<AuthorizationResult> Register(RegisterDTO registerDTO);
         Task<AuthorizationResult> Login(LoginDTO loginDTO);
-        Task Logout();
+        void Logout();
     }
 }

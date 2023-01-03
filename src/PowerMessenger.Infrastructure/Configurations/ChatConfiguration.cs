@@ -8,9 +8,15 @@ namespace PowerMessenger.Infrastructure.Configurations
     {
         public void Configure(EntityTypeBuilder<Chat> entity)
         {
-            entity.HasOne(p => p.ownerUser)
-                .WithMany(p => p.ownerChats);
-                
+            entity.HasData(new Chat[]
+            {
+                new Chat
+                {
+                    Id = 1,
+                    Name = "Group1",
+                    Photo = "ChatsImage/efe4e2f6-d7b2-49f4-80bf-a2b5e8fa7178.jpg"
+                }
+            });
         }
     }
 }

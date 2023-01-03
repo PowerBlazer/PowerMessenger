@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using PowerMessenger.Core.DTO;
+using PowerMessenger.Core.Exceptions;
 using System.Net;
 
 namespace PowerMessenger.Core.Middlewares
@@ -21,6 +22,11 @@ namespace PowerMessenger.Core.Middlewares
             try
             {
                 await _next(httpContext);
+            }
+            catch(IsNullValueException ex)
+            {
+                await HandleExceptionAsync(httpContext, ex.Message,
+                    HttpStatusCode.NotFound, ex.Message);
             }
             catch (Exception ex)
             {

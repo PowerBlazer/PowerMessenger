@@ -10,11 +10,13 @@ namespace PowerMessenger.Infrastructure.Configurations
         {
             entity.HasOne(p => p.User)
                 .WithMany(p => p.contacts)
+                .HasForeignKey(p => p.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
 
 
             entity.HasOne(p => p.Friend)
                 .WithMany(p => p.contactsForFriend)
+                .HasForeignKey(p=>p.FriendId)
                 .OnDelete(DeleteBehavior.Restrict);
 
         }

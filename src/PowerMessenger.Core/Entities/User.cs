@@ -32,8 +32,7 @@ namespace PowerMessenger.Core.Entities
         ///<summary>
         ///Ссылка на изображение аватарки
         ///</summary>
-        public string? Photo { get; set; }
-
+        public string? Photo { get; set; } = "UsersAvatar/user.jpg";
         /// <summary>
         /// Контакты
         /// </summary>
@@ -41,11 +40,12 @@ namespace PowerMessenger.Core.Entities
         ///<summary>
         ///Контакты со стороны другого пользователя 
         ///</summary>
+       
         public ICollection<Contact> contactsForFriend { get; set; }
         public ICollection<Message> messages { get; set; }
-        public ICollection<Chat> ownerChats { get; set; }
         public ICollection<MessageStatus> messageStatuses { get; set; }
         public ICollection<ChatParticipant> participantsChats { get; set; }
+        public ICollection<ChatOwner> ownerChats { get; set; }
 
 
     }

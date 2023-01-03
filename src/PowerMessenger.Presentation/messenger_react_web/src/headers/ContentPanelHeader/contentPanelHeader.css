@@ -1,0 +1,40 @@
+.contentPanelHeader{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: #212121;
+}
+
+.contentPanelHeader .chatInformation{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    gap: 15px;
+    align-items: center;
+}
+.contentPanelHeader .chatInformation img{
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    border: 1px solid rgba(108, 108, 108, 0.5);
+}
+.name_countParticipants{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+}
+.name_countParticipants .name{
+    text-align: start;
+    color: white;
+    font-family: 'Inter',sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+.name_countParticipants .participants{
+    text-align: start;
+    color: #9E9E9E;
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+}

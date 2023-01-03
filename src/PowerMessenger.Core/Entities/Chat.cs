@@ -20,11 +20,7 @@ namespace PowerMessenger.Core.Entities
         /// <summary>
         /// Ссылка на фото чата
         /// </summary>
-        public string? Photo { get; set; }
-        /// <summary>
-        /// Создатель чата
-        /// </summary>
-        public User ownerUser { get; set; }
+        public string? Photo { get; set; }       
         /// <summary>
         /// Дата создания
         /// </summary>
@@ -33,6 +29,7 @@ namespace PowerMessenger.Core.Entities
 
         public ICollection<Message> messages { get; set; }
         public ICollection<ChatParticipant> chatParticipants { get; set; }
+        public ICollection<ChatOwner> chatOwners { get; set; }
 
     }
 }

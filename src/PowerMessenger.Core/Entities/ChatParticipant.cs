@@ -1,4 +1,5 @@
 ﻿using PowerMessenger.Core.Entities.bases;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PowerMessenger.Core.Entities
 {
@@ -8,11 +9,15 @@ namespace PowerMessenger.Core.Entities
         /// <summary>
         /// Id Чата
         /// </summary>
-        public Chat chat { get; set; }
+        [ForeignKey("ChatId")]
+        public long ChatId { get; set; }
+        public Chat Chat { get; set; }
         /// <summary>
         /// Участник чата
         /// </summary>
-        public User user { get; set; }
+        [ForeignKey("UserId")]
+        public long UserId { get; set; }
+        public User User { get; set; }
         /// <summary>
         /// Дата присоединения
         /// </summary>

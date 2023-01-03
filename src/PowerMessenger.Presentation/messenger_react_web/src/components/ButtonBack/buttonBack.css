@@ -1,0 +1,49 @@
+.buttonBack{
+    background-color: transparent;
+    display: inline-block;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    rotate: 0;
+    animation: animation-arrow .3s ease-out;
+}
+
+.buttonBack::before{
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    top: 64%;
+    left: 50%;
+    border-style: solid;
+    border-color: #AAAAAA;
+    border-width: 2.7px 2.7px 0 0;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transform: rotate(-135deg);
+    margin: -15px 0 0 -10px;
+}
+.buttonBack::after{
+    content: '';
+    display: block;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-color: #AAAAAA;
+    position: absolute;
+    transform-origin: 50% 50%;
+    width: 25px;
+    height: 0;
+    border-width: 2.7px 0 0 0;
+    transform: translate(-12px, -1.4px);
+}
+
+@keyframes animation-arrow{
+    0%{
+        rotate: -180deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}

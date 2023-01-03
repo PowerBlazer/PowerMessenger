@@ -1,0 +1,23 @@
+.menuBurgerButton{
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+}   
+.menuBurgerButton:hover{
+    background-color: rgba(255, 255, 255, 0.121);
+}
+.menuBurgerButton>div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.menuBurgerButton>div>span{
+    color: white;
+    font-weight: 700;
+    font-family: 'Inter',sans-serif;
+    font-size: 15px;
+    
+}

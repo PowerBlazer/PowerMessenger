@@ -1,0 +1,36 @@
+.buttonBurger{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 40px;
+    height: 35px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    transition: background-color .3s;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: menu-anim .3s ease-out;
+}
+.buttonBurger div{
+    width: 23px;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+}
+.buttonBurger:hover{
+    background-color: rgba(255, 255, 255, 0.125);
+}
+
+@keyframes menu-anim{
+    0%{
+        rotate: -180deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+

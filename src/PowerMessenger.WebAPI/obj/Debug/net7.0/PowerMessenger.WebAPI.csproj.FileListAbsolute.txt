@@ -160,3 +160,12 @@ D:\GitHubProjects\PowerMessenger\src\PowerMessenger.WebAPI\obj\Debug\net7.0\refi
 D:\GitHubProjects\PowerMessenger\src\PowerMessenger.WebAPI\obj\Debug\net7.0\PowerMessenger.WebAPI.pdb
 D:\GitHubProjects\PowerMessenger\src\PowerMessenger.WebAPI\obj\Debug\net7.0\PowerMessenger.WebAPI.genruntimeconfig.cache
 D:\GitHubProjects\PowerMessenger\src\PowerMessenger.WebAPI\obj\Debug\net7.0\ref\PowerMessenger.WebAPI.dll
+D:\GitHubProjects\PowerMessenger\src\PowerMessenger.WebAPI\bin\Debug\net7.0\Google.Protobuf.dll
+D:\GitHubProjects\PowerMessenger\src\PowerMessenger.WebAPI\bin\Debug\net7.0\K4os.Compression.LZ4.dll
+D:\GitHubProjects\PowerMessenger\src\PowerMessenger.WebAPI\bin\Debug\net7.0\K4os.Compression.LZ4.Streams.dll
+D:\GitHubProjects\PowerMessenger\src\PowerMessenger.WebAPI\bin\Debug\net7.0\K4os.Hash.xxHash.dll
+D:\GitHubProjects\PowerMessenger\src\PowerMessenger.WebAPI\bin\Debug\net7.0\MySql.Data.dll
+D:\GitHubProjects\PowerMessenger\src\PowerMessenger.WebAPI\bin\Debug\net7.0\ZstdNet.dll
+D:\GitHubProjects\PowerMessenger\src\PowerMessenger.WebAPI\bin\Debug\net7.0\MySqlConnector.dll
+D:\GitHubProjects\PowerMessenger\src\PowerMessenger.WebAPI\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\GitHubProjects\PowerMessenger\src\PowerMessenger.WebAPI\bin\Debug\net7.0\BouncyCastle.Crypto.dll
